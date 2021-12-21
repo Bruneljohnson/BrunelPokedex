@@ -45,3 +45,5 @@ Some Pokémon are missing back images and require an update from the API.
 Rebuild this project using React.
 Implement Lazy loading or spinner for Pokémon Image Load.
 Find a way to limit the number a clicks a user do going backwards/ forwards to reduce the number of fetch calls to the server.
+
+CHECK IT OUT HERE -----> https://bruneljohnson.github.io/BrunelPokedex/
