@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="IMG/svg/Pokeballcopy.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="CSS/helperClasses.css" rel="stylesheet" />
+    <link href="CSS/general.css" rel="stylesheet" />
+    <link href="CSS/main.css" rel="stylesheet" />
+    <script defer src="pokemon.js"></script>
+    <title>| Brunel's Pokédex</title>
+  </head>
+  <body>
+    <div class="loading">
+      <img src="IMG/svg/Pokeball.jpg" class="dot"></img>
+    </div>
+    <div class="container">
+      <figure class="img-container2 hidden">
+        <a class="pokedex-anc2" href="#">
+          <img class="center-self" alt="Pokédex"
+            src="IMG/svg/pokedex.png"
+          />
+        </a>
+      </figure>
+      <main class="pokedex">
+        <header class="header">
+          <figure class="img-container">
+            <a class="pokedex-anc" href="#">
+              <img class="center-self" alt="Pokédex"
+                src="IMG/svg/pokedex.png"
+              />
+            </a>
+          </figure>
+          <form class="search">
+            <div class="btns">
+              <div class="pokedots">
+                <span class="colour-btn colour-green nobtn"></span>
+                <span class="colour-btn colour-yellow nobtn"></span>
+                <span class="colour-btn colour-red nobtn"></span>
+              </div>
+              <input
+                type="search"
+                class="search-field"
+                placeholder="Find a Pokémon | 1 - 898"
+                value=""
+              />
+            </div>
+            <button class="btn search-btn">
+              <span>GO!</span>
+            </button>
+          </form>
+        </header>
+
+        <div class="pokemon flex-col-a">
+          <div class="buttonfig">
+            <!-- <figure class="pokemon-screen flex-col" >
+              <img src="IMG/svg/Pokeball.jpg" alt="pokemon-name" class="pokemon-img" />
+              <h1 class="pokemon-name">
+                <span>Pokemon one</span>
+              </h1>
+            </figure> -->
+
+          </div>
+          <div class="poke-btns hidden">
+            <button class="poke-btn poke-btn--left">&larr;</button>
+            <button  class="poke-btn poke-btn--right"> &rarr;</button>
+          </div>
+        </div>
+        
+        <div class="info hidden">
+          <div class="info-tab-container help-list">
+            <button
+              class="colour-btn colour-yellow help info-tab info-tab--1 info-tab--active"
+              data-tab="1"
+            >
+              INFO
+            </button>
+            <button class="colour-btn colour-green help info-tab info-tab--2" data-tab="2">
+              MOVES
+            </button>
+            <button class="colour-btn colour-red help info-tab info-tab--3" data-tab="3">
+              TYPE
+            </button>
+            <button class="colour-btn colour-blue help info-tab info-tab--4" data-tab="4">
+              EVO
+            </button>
+          </div>
+          <div
+            class="info-content info-content--1 info-content--active"
+          >
+            <!-- <h5 class="info-header">
+              POKEMON NAME INFO.
+            </h5>
+            <ul class="info-list grid">
+              <li class="info-stat">Index No.     <span>[10]</span></li>
+              <li class="info-stat">Height.     <span>[10]</span></li>
+              <li class="info-stat">Experience.     <span>[10]</span></li>
+              <li class="info-stat">Weight.     <span>[10]</span></li>
+              <li class="info-stat">Capture Rate.     <span>[10]</span></li>
+              <li class="info-stat">Happiness.     <span>[10]</span></li>
+              <li class="info-stat">Legendary.     <span>[TRUE]</span></li>
+              <li class="info-stat">Mythical.     <span>[FALSE]</span></li>
+            </ul> -->
+          </div>
+  
+          <div class="info-content info-content--2">
+            
+            <!-- <h5 class="info-header">
+              POKEMON NAME SKILLS.
+            </h5>
+            <ul class="info-list grid">
+              <li class="info-stat skills">Index No.     <span>[10]</span></li>
+            </ul> -->
+          </div>
+          <div class="info-content info-content--3">
+    
+            <!-- <h5 class="info-header">
+              POKEMON NAME TYPE(S).
+            </h5>
+            <div class="pokemon-types grid">
+              <div class="pokemon-type types--electric">ELECTRIC</div>
+            </div> -->
+          </div>
+          <div class="info-content info-content--4 flex-col">
+    
+            <!-- <h5 class="info-header">
+              POKEMON NAME EVOLVES FROM:
+            </h5>
+            <div class="pokemon-types grid">
+              <div class="pokemon-type types--electric">ELECTRIC</div>
+            </div> -->
+          </div>
+        </div>
+        <div class="overlay hidden">
+          <!-- <div class="error ">
+            ERROR
+            <span>Error Message</span>
+          </div> -->
+          <button class="modal modal-btn">X</button>
+        </div>
+        <button class="colour-btn colour-green x hidden">B</button>
+        <button class="colour-btn colour-red y hidden">F</button>
+        <p class="copyright">
+          &copy; Copyright by
+           <a
+             class="insta-link"
+             target="_blank"
+             href="https://instagram.com/bruneljohnson"
+             >Brunel Johnson</a
+           > 2022.
+         </p>
+      </main>
+    </div>
+  </body>
+</html>

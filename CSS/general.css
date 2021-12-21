@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+:root {
+  --color-primary: #910c00e0;
+  --color-grad-1: #5688c7;
+  --color-grad-2: #3459954d;
+  --color-grad-3: #440101c4;
+  --color-grad-4: #ffffffbe;
+  --color-grad-5: #791800bb;
+
+  --color-grey-light-1: #f9f5f3;
+  --color-grey-light-2: #f2efee;
+  --color-grey-light-3: #d3c7c3;
+  --color-grey-dark-1: #615551;
+  --color-grey-dark-2: #918581;
+
+  --gradient: linear-gradient(
+    to right bottom,
+    var(--color-grad-1),
+    var(--color-grad-2)
+  );
+}
+
+body {
+  background: linear-gradient(var(--color-grad-1), var(--color-grad-2));
+  height: 100vh;
+  font-family: "orbitron", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.1;
+}
+/* CONTAINERS */
+
+.container {
+  width: 120rem;
+  margin: 8rem auto;
+}
+
+/* POKEDEX */
+
+.pokedex {
+  display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr 1fr;
+  background: linear-gradient(
+    var(--color-grad-3),
+    var(--color-primary),
+    var(--color-grad-3)
+  );
+  box-shadow: 0 8px 32px 0 #38000067;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid #ffffff2e;
+  column-gap: 2rem;
+  row-gap: 1rem;
+  height: 70rem;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.pokedex::after {
+  content: "";
+  width: 2rem;
+  height: 100rem;
+  left: 50%;
+  transform: translateX(-40%);
+  background: linear-gradient(
+    to left,
+    var(--color-grad-5),
+    var(--color-grad-3)
+  );
+  position: absolute;
+  z-index: 99;
+  overflow: hidden;
+}
+.pokedex::before {
+  content: "";
+  width: 60.5rem;
+  height: 1rem;
+  right: 0;
+  top: 18%;
+  transform: translateY(80%);
+  background: linear-gradient(var(--color-grad-5), var(--color-grad-3));
+  position: absolute;
+  z-index: 98;
+}
+.pokedex-anc {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.pokemon {
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  width: 100%;
+  margin-top: 2rem;
+}
+.buttonfig {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  width: 100%;
+}
+
+/* COPYRIGHT */
+
+.copyright {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  color: #ffffff63;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(60%, -30%);
+}
+
+.copyright a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  border-bottom: 1px solid #ffffff63;
+}
