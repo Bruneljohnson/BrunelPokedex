@@ -25,8 +25,10 @@ Test different parts of the Pokémon API to find limitations and disjointments
 Search for the Pokémon with the longest name and use to create a uniform look in design.
 
 - Fletchinder.
-  Limit the number of moves rendered on screen using filter array method.
-  Split and take the first entry from the habitat array to keep habitat to one word.
+
+
+Limit the number of moves rendered on screen using filter array method.
+Split and take the first entry from the habitat array to keep habitat to one word.
 
 ------- PROBLEMS:
 
@@ -40,6 +42,6 @@ Some Pokémon are missing back images and require an update from the API.
 
 ------- FUTURE PLANS:
 
-Rebuild this project using React
+Rebuild this project using React.
 Implement Lazy loading or spinner for Pokémon Image Load.
 Find a way to limit the number a clicks a user do going backwards/ forwards to reduce the number of fetch calls to the server.
